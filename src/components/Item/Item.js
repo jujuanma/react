@@ -1,5 +1,7 @@
 import './Item.css'
 
+
+
 const Item = ({product, routing}) => {
    
     return (
@@ -20,6 +22,7 @@ const Item = ({product, routing}) => {
             <footer className='ItemFooter'>
                 <button className='Option' onClick={() => routing({ path: 'detail', id: product.id })}>Ver Detalle</button>
             </footer>
+
         </article>
     )
 }
